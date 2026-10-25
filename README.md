@@ -35,3 +35,12 @@ Screenshots of the SQL statements and their actual execution results will be inc
 7. Conclusion
 
 This project demonstrates database creation, table relationships, data retrieval, data modification, and table structure changes using PostgreSQL.
+### Task: Data Verification Count
+```sql
+SELECT 'customers', COUNT(*) FROM customers
+UNION ALL
+SELECT 'orders', COUNT(*) FROM orders
+UNION ALL
+SELECT 'order_items', COUNT(*) FROM order_items;
+```
+![1_Data Verification Count qoury](1_Data Verification Count.jpg)
