@@ -35,3 +35,14 @@ Screenshots of the SQL statements and their actual execution results will be inc
 7. Conclusion
 
 This project demonstrates database creation, table relationships, data retrieval, data modification, and table structure changes using PostgreSQL.
+### Task: Filter and Order Items
+```sql
+SELECT *
+FROM orders
+WHERE status = 'Pending';
+
+SELECT *
+FROM order_items
+ORDER BY unit_price DESC;
+```
+![JOIN QOUERY](JOIN.jpg)
