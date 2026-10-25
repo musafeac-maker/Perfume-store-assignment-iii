@@ -45,4 +45,4 @@ SELECT *
 FROM order_items
 ORDER BY unit_price DESC;
 ```
-![JOIN QOUERY](JOIN.jpg)
+![screenshots/6_JOIN QOUERY](screenshots/6_JOIN.jpg)
