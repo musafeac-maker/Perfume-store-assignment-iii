@@ -3,6 +3,7 @@ Perfume Store Management System
 Assignment III: SQL Practical Exercise – Table Manipulation
 
 Student ID: 202512517
+
 DBMS: PostgreSQL
 
 1. Project Overview
