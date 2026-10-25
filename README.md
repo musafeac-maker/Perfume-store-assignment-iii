@@ -43,4 +43,4 @@ SELECT 'orders', COUNT(*) FROM orders
 UNION ALL
 SELECT 'order_items', COUNT(*) FROM order_items;
 ```
-![1_Data Verification Count qoury](1_Data Verification Count.jpg)
+![Data Verification](3_DATA%20VERIFICATION.jpg)
