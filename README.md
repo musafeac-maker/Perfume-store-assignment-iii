@@ -35,28 +35,6 @@ Screenshots of the SQL statements and their actual execution results will be inc
 7. Conclusion
 
 This project demonstrates database creation, table relationships, data retrieval, data modification, and table structure changes using PostgreSQL.
--- Q2.1: Show orders with customer names
-SELECT o.order_id, c.full_name, o.order_date, o.status
-FROM orders o
-INNER JOIN customers c
-    ON o.customer_id = c.customer_id;
 
--- Q2.2: Show all customers, including those without orders
-SELECT c.full_name, o.order_id, o.status
-FROM customers c
-LEFT JOIN orders o
-    ON c.customer_id = o.customer_id;
-
--- Q2.3: Show customers, orders and perfume items
-SELECT
-    c.full_name,
-    o.order_id,
-    i.perfume_name,
-    i.quantity,
-    i.unit_price,
-    i.quantity * i.unit_price AS line_total
-FROM customers c
-JOIN orders o ON c.customer_id = o.customer_id
-JOIN order_items i ON o.order_id = i.order_id;
 ```
 ![screenshots/6_JOIN QOUERY](screenshots/6_JOIN.jpg)
